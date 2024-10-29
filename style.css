@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'DOSGothic';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'DOSGothic';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: black;
+}
+
+#intro6 {
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* 세로로 쌓이게 설정 */
+    justify-content: center;
+    align-items: center;
+    /*background-image: url('bg.jpg');*/
+    background-color: black;
+    background-size: cover;
+    width: 100vw; /* 화면 너비에 맞게 설정 */
+    height: 100vh; /* 화면 높이에 맞게 설정 */
+    color: white;
+    margin: 0 auto;
+    padding-top: 20vh;
+
+}
+
+#container {
+    text-align: center;
+    opacity: 1;
+    transition: opacity 1s ease;
+    padding-top: 1vh;
+
+}
+
+#title {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#subtitle {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+
+#intro1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* 세로로 쌓이게 설정 */
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-size: cover; /* 배경 이미지가 화면에 꽉 차도록 설정 */
+    background-position: center; /* 배경 이미지 가운데 정렬 */
+    width: 100vw; /* 화면 너비에 맞게 설정 */
+    height: 100vh; /* 화면 높이에 맞게 설정 */
+    margin: 0; /* 여백 제거 */
+    padding-top: 40vh;
+    transition: opacity 1s ease;
+    
+}
+
+.restart {
+    margin-top: 5vh;
+}
+
+#intro1 h2 {
+    font-size: 2rem;
+    color: white;
+    padding: 2%;
+}
+
+#normal, #intro1 button {
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    border: none;
+    padding: 5px 5px;
+    width: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'DOSGothic';
+    margin: 1vw;
+}
+
+/* 버튼 클릭 효과 */
+#intro1 button:active {
+    background-color: royalblue;
+    transform: scale(0.95); /* 클릭 시 버튼이 살짝 작아지는 효과 */
+}
+
+#bad button {
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    border: none;
+    padding: 5px 5px;
+    width: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'DOSGothic';
+    margin: 0.4vw;
+}
+
+#intro2, #intro3, #intro4, #intro5, #intro7, #intro8 {
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* 세로로 쌓이게 설정 */
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-size: cover;
+    width: 100vw; /* 화면 너비에 맞게 설정 */
+    height: 100vh; /* 화면 높이에 맞게 설정 */
+    color: white;
+    margin: 0 auto;
+    padding-top: 20vh;
+}
+
+
+#intro9{ text-align: center;
+    display: flex;
+    flex-direction: column; /* 세로로 쌓이게 설정 */
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    width: 100vw; /* 화면 너비에 맞게 설정 */
+    height: 100vh; /* 화면 높이에 맞게 설정 */
+    color: black;
+    margin: 0 auto;
+    background-image: url("sleep.PNG");
+    background-position: -2%;
+}
+
+#gamestart {
+    width: 260px;
+    height: 250px;
+    position: absolute;
+    display: flex;
+top: 20%;
+left: 46%;
+cursor: pointer;
+    transition: background-color 1s ease, transform 1s ease;
+}
+
+#intro5, #intro7, #intro8, #intro9 {
+    font-size: 2rem;
+    padding-top: 40vh;
+}
+#intro5 p {padding: 1vw; font-size: 1.4rem;}
+
+
+.dialogue-box {
+    width: 300px; /* 대화 상자의 너비 */
+    padding: 20px; /* 대화 상자 안쪽 여백 */
+    background-color: ; /* 배경색 설정 */
+    border: 2px solid #333; /* 테두리 설정 */
+    border-radius: 10px; /* 모서리 둥글게 */
+    position: relative;
+    margin: 20px auto; /* 위 아래 여백 추가 및 수평 중앙 정렬 */
+    display: flex; /* 플렉스 컨테이너로 설정 */
+    align-items: center; /* 내용 중앙 정렬 */
+    flex-direction: column; /* 세로로 쌓이게 설정 */
+    justify-content: center;
+}
+
+
+
+.next-button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'DOSGothic';
+}
+
+/* 노란색 버튼 */
+.sound-button {
+    position: absolute;
+    top: 10%;
+    left:50%;
+    width: ; /* 너비 설정 */
+    height: 40px; /* 높이 설정 */
+    background-color: royalblue;
+    transform: translate(-50%, -50%);
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DOSGothic';
+
+	border: 0;
+	padding: 15px 25px;
+	display: inline-block;
+	text-align: center;
+	color: rgb(33, 33, 33);
+
+    
+        background: rgba(240,210,100,1);
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(240,210,100,1)), to(rgba(229,201,96,1)));
+        background: -webkit-linear-gradient(rgba(240,210,100,1) 0%, rgba(229,201,96,1) 100%);
+        background: -moz-linear-gradient(rgba(240,210,100,1) 0%, rgba(229,201,96,1) 100%);
+        background: -o-linear-gradient(rgba(240,210,100,1) 0%, rgba(229,201,96,1) 100%);
+        background: linear-gradient(rgba(240,210,100,1) 0%, rgba(229,201,96,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0d264', endColorstr='#e5c960', GradientType=0 );
+        margin: 10px auto;
+        padding: 4px 25px;  
+
+        background-color: #f0d264;
+
+	border:1px;
+    border-radius: 20px;
+    border-color: #DBC05B;
+
+    box-shadow:0px 4px 0px #D1B757;}
+.btn.yellow:active {box-shadow: 0 0 #ff4c4b; background-color: #D6BB59;
+    
+}
+.sound-button:active {background: #DBC05B;}
+.color .yellow {background: #f0d264;}
+
+
+/* 다른 버튼 */
+button.btn.third {
+    border-color: royalblue; /* 원하는 색상으로 변경 */
+    color: #fff;
+    box-shadow: 0 0 40px 40px royalblue inset, 0 0 0 0 royalblue; /* 원하는 색상으로 변경 */
+    transition: all 150ms ease-in-out;
+
+    padding: 10px 20px;
+    font-family: 'DOSGothic';
+    border-radius: 50px;
+    margin: 2vw;
+    font-size: 1rem;
+
+  }
+  
+  button.btn.third:hover {
+    box-shadow: 0 0 10px 0 royalblue inset, 0 0 10px 4px royalblue; /* 원하는 색상으로 변경 */
+    color: royalblue;
+  }
+
+
+
+#characters {
+    display: flex; /* 캐릭터를 가로로 나열 */
+    justify-content: center; /* 중앙 정렬 */
+}
+
+.cc {
+    display: flex; /* 캐릭터를 가로로 나열 */
+    justify-content: center; /* 중앙 정렬 */
+}
+
+.character-container {
+    position: relative; /* 말풍선을 위치시키기 위해 필요 */
+    margin: 0 1.5vw; /* 캐릭터 간격 */
+    display: flex; /* 세로 방향으로 나열 */
+    flex-direction: column; /* 세로 방향으로 나열 */
+    align-items: center; /* 중앙 정렬 */
+}
+
+.character {
+    width: 120px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+.character:hover {
+    transform: scale(1.1);
+}
+/* 캐릭터 1 */
+[data-character="character1"]:hover {
+    content: url('character1a.GIF');
+}
+/* 캐릭터 2 */
+[data-character="character2"]:hover {
+    content: url('character2a.GIF');
+}
+/* 캐릭터 3 */
+[data-character="character3"]:hover {
+    content: url('character3a.GIF'); 
+}
+    
+/* 말풍선 스타일 */
+.speech-bubble {
+    color: black;
+    font-size: 1rem;
+    display: none; /* 기본적으로 숨김 */
+    position: absolute; /* 캐릭터에 상대적으로 위치 */
+    bottom: -70px; /* 캐릭터 아래에 위치 */
+    left: 50%; /* 중앙 정렬 */
+    transform: translateX(-50%); /* 중앙 정렬 보정 */
+    background: #fff; /* 배경색 */
+    border: 1px solid #000000;
+    border-radius: 50px; /* 모서리 둥글게 */
+    padding: 10px; /* 패딩 */
+    white-space: nowrap; /* 줄 바꿈 방지 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* 그림자 */
+}
+
+/* 캐릭터 호버 시 말풍선 표시 */
+.character-container:hover .speech-bubble {
+    display: block; /* 호버 시 보이기 */
+}
+
+
+.section {
+    opacity: 1; /* 초기 투명도 설정 */
+    transition: opacity 1s ease, visibility 1s ease; /* 부드러운 전환 효과 추가 */
+}
+
